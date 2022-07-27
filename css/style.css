@@ -1,0 +1,343 @@
+/* Box Model Hack - Leons */
+* {
+  box-sizing: border-box;
+}
+
+/* As we start nesting our boxes inside of each other, they will inherit the height and width of their parent */
+*, *:before, *a:after {
+  box-sizing: inherit;
+}
+
+/* Clear fix hack - Leons */
+/* .clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+} */
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html, body {
+  height: 100%;
+  font-size: 62.5%;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  height: 30%;
+  background: #161f2a;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+header a:link {
+  color: #fff;
+}
+
+nav > ul {
+  padding: 0;
+  margin-top: 0;
+  list-style-type: none;
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+header, .info {
+  color: #fff;
+  background: #66768a;
+}
+
+.info, .visit {
+  width: 100%;
+  height: 70%;
+}
+
+.info, .why-and-volunteer {
+  text-align: center;
+  padding: 5% 10%;
+}
+
+.info p{
+  padding: 5%;
+  font-size: 3rem;
+}
+
+.info i {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+.why-and-volunteer p{
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+section a {
+  font-size: 2rem;
+}
+
+.visit {
+  background: #dbdfe2;
+}
+
+.visit section {
+  width: 50%;
+  height: 100%;
+  float: left;
+  padding: 5% 5%;
+  text-align: center;
+}
+
+.visit p {
+  font-size: 2rem;
+  padding: 5%;
+}
+
+.visit a {
+  color: #28313b;
+  font-size: 2.5rem;
+  text-decoration: none;
+  padding: 2.5% 10%;
+  border: 2px solid #b1b2b3;
+}
+
+.visit, .why-and-volunteer a:link{
+  color: #28313b;
+}
+
+.why-and-volunteer {
+  width: 100%;
+  height: 50%;
+}
+
+.why-and-volunteer p {
+  font-size: 2.5rem;
+  padding: 2.5%;
+}
+
+.why-and-volunteer a {
+  color: #28313b;
+  font-size: 3rem;
+  text-decoration: none;
+  padding: 2% 5%;
+  border: 2px solid #b1b2b3;
+}
+
+.header-left {
+  width: 10%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  margin: 2% 1%;
+}
+
+.header-left a:link {
+  color: #fff;
+  font-size: 2.25rem;
+  text-decoration: none;
+}
+
+.header-right {
+  width: 10%;
+  height: 100%;
+  float: right;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 10%;
+  padding: 1% 0;
+  margin-top: 1%;
+  margin-right: 5%;
+  text-align: center;
+  font-weight: 700;
+}
+
+.header-right > a:link {
+  color: #66768a;
+  font-size: 2.25rem;
+  text-decoration: none;
+}
+
+i {
+  color: white;
+  padding: 2%;
+}
+
+footer a:link {
+  color: #fff;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.footer-left {
+  width: 50%;
+  height: 75%;
+  float: left;
+  padding-left: 2%;
+}
+
+.footer-left span {
+  display: inline-block;
+  color: #617285;
+  font-size: 1.75rem;
+  padding: 1%;
+}
+
+.footer-left a {
+  padding: 1%;
+}
+
+.footer-right {
+  font-size: 1.75rem;
+  width: 20%;
+  height: 75%;
+  float: right;
+  text-align: left;
+}
+
+.footer-right section {
+  margin: 5%;
+}
+
+.footer-right span {
+  font-weight: 500;
+  color: #fff;
+  line-height: 150%;
+}
+
+.footer-right p {
+  color: #5a6168;
+}
+
+.footer-bottom {
+  width: 100%;
+  height: 25%;
+  float: right;
+  border-top: 2px solid #fff;
+}
+
+.footer-bottom {
+  color: #fff;
+  font-size: 1.75rem;
+}
+
+.footer-bottom p {
+  width: 80%;
+  margin: 0;
+  display: block;
+  float: left;
+  padding: 1% 0 1% 2%;
+}
+
+.footer-bottom img {
+  float: right;
+  margin: 1% 2% 1% 0;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1280px)
+{
+  .footer-right {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 1045px)
+{
+  .footer-right {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 875px)
+{
+  .header-left {
+    width: 15%;
+  }
+
+  .header-right {
+    width: 15%;
+  }
+
+  .footer-right {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 725px) {
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .info p {
+    font-size: 3rem;
+  }
+
+  .visit h3 {
+    font-size: 2.75rem;
+  }
+
+  .visit p {
+    font-size: 1.75rem;
+  }
+
+  .visit a {
+    font-size: 2rem;
+  }
+
+  .footer-right {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .header-left {
+    width: 20%;
+  }
+
+  .header-right {
+    width: 20%;
+  }
+
+  .footer-left {
+    width: 45%;
+  }
+
+  .footer-right {
+    width: 55%;
+  }
+}
